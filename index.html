@@ -1,11 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title></title>
-</head>
-<body>
-    你好
 
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body class="" cz-shortcut-listen="true">
+    <header class="g-header">
+        <div class="wrapper">
+            <div class="brand">
+                <h1 class="title">WEB前端开发</h1>
+                <h2 class="subtitle">专注前端开发，关注用户体验</h2>
+            </div>
+            <div class="attention">
+                <a class="iconfont icon-qq" target="_blank" href="http://sighttp.qq.com/authd?IDKEY=ac3c33ef370b9c4efc05e5660a2d2085b121007e508c595f"></a>
+                <a class="iconfont icon-weibo" target="_blank" href="http://weibo.com/qq759979885"></a>
+            </div>
+        </div>
+    </header>
+    <header class="g-xs-header">
+        <h1 class="title">FE</h1>
+        <div class="icon-menu">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </header>
+    <nav class="g-nav">
+        <ul>
+            <li data-href="/" class="active">首页</li>
+            <li data-href="/html/" class="">HTML</li>
+            <li data-href="/css/" class="">CSS</li>
+            <li data-href="/js/" class="">JS</li>
+            <li data-href="/jq/" class="">jQuery</li>
+            <li data-href="/tool/" class="">Tool</li>
+            <li data-href="/nav/" class="">Resource</li>
+            <li data-href="/about/" class="">About</li>
+        </ul>
+    </nav>
+    <div class="mask-nav"></div>
+    <div class="g-content">
+    </div>
+    <!-- 列表 -->
+    <div class="g-list" id="g-list">
+        <ul>
+            <li data-href="/js/onbeforeunload/"><span class="title">onbeforeunload</span><span class="time">2016-01-01</span></li>
+            <li data-href="/tool/mac/"><span class="title">Mac 分享</span><span class="time">2015-12-29</span></li>
+            <li data-href="/jq/select/"><span class="title">JQ - select</span><span class="time">2015-12-27</span></li>
+            <li data-href="/jq/radio-checkbox/"><span class="title">JQ - radio-checkbox</span><span class="time">2015-12-27</span></li>
+            <li data-href="/html/label/"><span class="title">HTML标签</span><span class="time">2015-12-21</span></li>
+            <li data-href="/css/layout/"><span class="title">CSS - 排版</span><span class="time">2015-12-18</span></li>
+            <li data-href="/css/float/"><span class="title">CSS - 浮动</span><span class="time">2015-12-18</span></li>
+            <li data-href="/css/position/"><span class="title">CSS - 定位</span><span class="time">2015-12-18</span></li>
+            <li data-href="/css/box/"><span class="title">CSS - 盒模型</span><span class="time">2015-12-18</span></li>
+            <li data-href="/css/total/"><span class="title">CSS大全</span><span class="time">2015-12-17</span></li>
+            <li data-href="/tool/gem/"><span class="title">Ruby gem</span><span class="time">2015-12-17</span></li>
+            <li data-href="/css/selector/"><span class="title">CSS - 选择器</span><span class="time">2015-12-12</span></li>
+            <li data-href="/tool/jekyll/"><span class="title">Jekyll笔记</span><span class="time">2015-12-12</span></li>
+            <li data-href="/tool/markdown/"><span class="title">Markdown说明书</span><span class="time">2015-11-11</span></li>
+            <li data-href="/js/angular/"><span class="title">Angular笔记</span><span class="time">2015-11-05</span></li>
+        </ul>
+    </div>
+    <!-- 文章 -->
+    <div class="g-article" id="g-article"></div>
+    <footer class="g-footer">
+        <div class="wrapper">
+            <span>©</span>
+            <time>2015</time>
+            <span>WEB前端开发</span>
+            <span>|</span>
+            <span>Powered by </span>
+            <a target="_blank" href="https://github.com/shuoshubao">GitHub</a>
+        </div>
+    </footer>
+    <script src="//hm.baidu.com/hm.js?df9cb00a060bfc62c3f469dc0f5c2433"></script>
+    <script>
+    if (window.location.hostname === 'fe.shuoshubao.com') {
+        // 百度统计
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?df9cb00a060bfc62c3f469dc0f5c2433";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    }
+    </script>
+    <script src="/sta/lib/sea.js"></script>
+    <script>
+    seajs.config({
+        base: '/sta/lib/',
+        alias: {
+            jquery: '/sta/lib/jquery.js',
+            zepto: '/sta/lib/zepto.js',
+        }
+    })
+    seajs.use('/sta/js/base');
+    </script>
 </body>
+
 </html>
