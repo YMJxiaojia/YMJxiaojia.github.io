@@ -33,13 +33,13 @@ define(function(require, exports, module) {
         $('body').removeClass('move-right');
         $('.g-xs-header .icon-menu').removeClass('active');
         // 导航高亮
-        $('.g-nav li[data-href="/' + (arrPath[1] == '' ? '' : arrPath[1] + '/') + '"]').addClass('active').siblings().removeClass('active');
+        $('.g-nav li[data-href="/' + (arrPath[1] === '' ? '' : arrPath[1] + '/') + '"]').addClass('active').siblings().removeClass('active');
 
-        if (arrPath[1].length == 0) {
+        if (arrPath[1].length === 0) {
             // 首页
             renderList(DATA.posts);
         }
-        if (arrPath[1].length > 0 && arrPath[2].length == 0) {
+        if (arrPath[1].length > 0 && arrPath[2].length === 0) {
             // 列表
             var strTemp = arrPath[1];
             var postsTemp = [];
